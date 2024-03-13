@@ -1,0 +1,44 @@
+
+//Check Key Existence in HashMap
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CheckKeyHashMap {
+
+    public static void main(String[] args){
+
+
+        Map<String, Integer> studentMap = new HashMap<>();
+
+        
+        studentMap.put("Kane", 543453445);
+
+
+        String studentName = "Kane";
+
+
+        for(Map.Entry<String, Integer> entry : studentMap.entrySet()){
+
+            if(entry.getKey() == studentName){
+
+
+                System.out.println("The student named "+entry.getKey()+" with id number "+entry.getValue()+"is exits ? "+Boolean.TRUE);
+                break;
+            }
+
+            else {
+
+                System.out.println("The student with ID number "+entry.getValue()+" not exits");
+            }
+
+
+        }
+
+
+
+
+
+
+    }
+}
